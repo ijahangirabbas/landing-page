@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leading industrial, construction, and technical services in Colombia. Partner with us for reliable, high-quality solutions tailored to your needs. Request a free quote today!">
+    <meta name="keywords" content="industrial services Colombia, construction services, technical services, reliable contractor Colombia, professional services">
+    <meta name="author" content="Your Company Name">
+    <meta name="robots" content="index, follow">
+    <title>Your Company Name - Premier Industrial & Construction Services in Colombia</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts for professional typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #004aad, #007bff);
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="none" stroke="%23ffffff" stroke-width="0.5" x="10" y="10" width="80" height="80"/></svg>') repeat;
+            opacity: 0.05;
+        }
+
+        .logo {
+            max-width: 180px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #004aad;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6200;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background: #e55a00;
+            transform: translateY(-2px);
+        }
+
+        .cta-button:focus {
+            outline: 3px solid #003087;
+            outline-offset: 2px;
+        }
+
+        .services, .portfolio, .testimonials, .contact {
+            padding: 80px 20px;
+            background: #fff;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-grid, .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-item, .testimonial {
+            background: #f9f9f9/$(document).ready(function(){$("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=$(this.hash);if(e=e.length&&e||$("[name="+this.hash.slice(1)+"]"),e.length){var t=e.offset().top;return $("html,body").animate({scrollTop:t},1e3),!1}}})}),$(document).ready(function(){$("body").css("display","none"),$("body").fadeIn(2e3),$("a.transition").click(function(e){e.preventDefault(),linkLocation=this.href,$("body").fadeOut(1e3,redirectPage)}),$("a.transition").click(function(e){e.preventDefault(),linkLocation=this.href,$("body").fadeOut(1e3,redirectPage)})}),$(window).scroll(function(){$(this).scrollTop()>150?$(".to_top").fadeIn():$(".to_top").fadeOut()}),$(document).ready(function(){$(".to_top").click(function(){return $("html, body").animate({scrollTop:0},1e3),!1})});; padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-item:hover, .testimonial:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: opacity 0.3s;
+        }
+
+        .portfolio-grid img:hover {
+            opacity: 0.9;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #004aad;
+            font-weight: 500;
+        }
+
+        input, textarea {
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #004aad;
+            outline: none;
+            box-shadow: 0 0 6px rgba(0, 74, 173, 0.3);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .footer {
+            background: #1a252f;
+            color: white;
+            padding: 60px 20px 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo .logo {
+            max-width: 140px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .footer-links h3, .footer-contact h3, .footer-social h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #ff6200;
+            font-weight: 700;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links ul li a:hover {
+            color: #ff6200;
+        }
+
+        .footer-contact p {
+            margin: 12px 0;
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .footer-contact a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-contact a:hover {
+            color: #ff6200;
+        }
+
+        .footer-social a {
+            color: #ccc;
+            font-size: 1.4rem;
+            margin-right: 20px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-social a:hover {
+            color: #ff6200;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+            margin-top: 30px;
+        }
+
+        .footer-bottom p {
+            font-size: 0.95rem;
+            color: #ccc;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            .cta-button {
+                padding: 12px 24px;
+                font-size: 1rem;
+            }
+            .hero {
+                padding: 80px 20px;
+            }
+            .services, .portfolio, .testimonials, .contact {
+                padding: 60px 20px;
+            }
+            .contact-form {
+                grid-template-columns: 1fr;
+            }
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .footer-logo .logo {
+                margin: 0 auto 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .portfolio-grid img {
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <img src="logo.png" alt="Your Company Logo" class="logo">
+            <h1>Premier Industrial & Construction Services in Colombia</h1>
+            <p>Transform your projects with our reliable, high-quality solutions. Partner with us today!</p>
+            <a href="#contact" class="cta-button">Get a Free Quote</a>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Expertise</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Industrial Solutions</h3>
+                    <p>Optimize your operations with our customized technical services, designed for efficiency and precision.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Construction Excellence</h3>
+                    <p>From concept to completion, we deliver projects on time, within budget, and to the highest standards.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Technical Maintenance</h3>
+                    <p>Ensure peak performance with our reliable maintenance services for equipment and facilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <p>Discover our portfolio of successful projects showcasing our commitment to quality and innovation.</p>
+            <div class="portfolio-grid">
+                <img src="project1.jpg" alt="Industrial Project" loading="lazy">
+                <img src="project2.jpg" alt="Construction Project" loading="lazy">
+                <img src="project3.jpg" alt="Technical Service Project" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Client Success Stories</h2>
+            <div class="service-grid">
+                <div class="testimonial">
+                    <p>"Their expertise and dedication transformed our project, delivering exceptional results on time."</p>
+                    <span>- Client Name, Industrial Corp</span>
+                </div>
+                <div class="testimonial">
+                    <p>"A reliable partner who exceeded our expectations with their professionalism and quality."</p>
+                    <span>- Client Name, Construction Ltd</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let’s Build Your Future</h2>
+            <p>Contact us today for a free consultation and see how we can elevate your projects.</p>
+            <form action="/submit" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Your Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Project Details</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your project" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Request Your Free Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Your Company Logo" class="logo">
+                <p>Your Company Name - Delivering excellence in industrial and construction services across Colombia.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="/about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><a href="tel:+5712345678">+57 123 456 78</a></p>
+                <p><a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+                <p>Carrera 7 #72-13, Bogotá, Colombia</p>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Your Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you soon.');
+            this.reset();
+        });
+
+        // Lazy load images for better performance
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.dataset.src || img.src;
+            });
+        });
+    </script>
+</body>
+</html>
